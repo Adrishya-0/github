@@ -1,0 +1,64 @@
+<style>
+.subscribe-button{
+    background-color:rgb(170, 0, 0);
+    color:white;
+    border:none;
+    height: 37px;
+    width:95px;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: opacity 0.15s;
+}
+.subscribe-button:hover{
+    /* background-color:rgb(155, 29, 29);    */
+    opacity:0.8;  /*opacity:1 means normal, 0.7 means opacity is decreasing. it is measured in 0-1 */
+}
+/* when we clicked change effect #Pseudo-class effect*/
+
+.subscribe-button:active{
+    /* background-color:green; */
+    opacity:0.5;
+}
+.join-button{
+    background-color:white;
+    color:rgb(1, 152, 202);
+    border: 1px solid rgb(18, 134, 192);
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius:2px;
+    cursor:pointer;
+    transition: background-color 0.15s,
+    color 0.15s;
+}
+
+.join-button:hover{
+    background-color:rgb(13, 90, 206);
+    color:white;
+}
+.join-button:active{
+    opacity:0.5;
+}
+.tweet-button{
+    background-color:rgb(18, 160, 255);
+    color:rgb(247, 253, 255);
+    /* border: 1px solid rgb(18, 134, 192); */
+    border:none;
+    padding: 9px 16px;
+    margin-left: 15px;
+    border-radius:2px;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:30px;
+    font-size:14px;
+    transition: box-shadow 0.15s;
+}
+
+.tweet-button:hover{
+        box-shadow: 5px 5PX 10PX rgba(0, 0, 0, 0.15);  /*TAKES FOR VALUE FIRST-HORIZONTAL SECOND-VERTICAL THIRD-BLUR FOURTH-BLUR */
+
+}
+</style>
+
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN</button>
+<button class="tweet-button">Tweet</button>
