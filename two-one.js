@@ -68,3 +68,61 @@ let age = 20
 let showResult = age?? "No age"
 console.log(showResult)
 
+
+
+//object and their properties
+
+const clothes={
+    name: "denim",
+    size:"XL"
+}
+console.log(Object.keys(clothes))  //to see the keys
+console.log(Object.values(clothes)) //to see the values
+
+// add object to an array
+
+clothes.company="china"
+clothes.price=500
+console.log(clothes)
+
+//replace keys or values in array
+clothes.company="india"
+clothes.price=20
+console.log(clothes)
+
+//freeze the object
+Object.freeze(clothes)
+clothes.name="apolo"
+console.log(clothes)  //nothing changes
+
+//condition 
+
+const isNepali=false
+if(isNepali){
+    console.log("buy from nepal")
+}else{
+    console.log("buy from india")
+}
+
+//signup (ternary)
+const isSuperAdmin=true
+const checkadmin = isSuperAdmin ? "welocome to the dashboard" : "wrong information"
+
+//short circuit
+const storeresult= isSuperAdmin && " hello Admin Welcome to the DASHBOARD" || "Don't show the dashboard"
+
+console.log(storeresult)
+
+
+let isloggedOut= true
+const displaylogout = isloggedOut && "Please login or register"
+console.log(displaylogout)
+
+
+//Nullish coelescing operator useful for null or undefined
+
+let blankage = null
+let setmessage = blankage ?? "no age"
+console.log(setmessage)
+
+//
