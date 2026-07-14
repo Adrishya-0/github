@@ -69,3 +69,53 @@ const power = (a)=>a*a
 
  //
 const leavetype=["sick_leave","casual_leave"]
+
+for(let i=0;i<leavetype.length;i++){
+    console.log(leavetype[i])
+
+}
+//using while
+
+let i=0;
+while(i<leavetype.length){
+    console.log(leavetype[i])
+    i++;
+}
+
+// for for string and array uptimized
+
+for(leaveprint of leavetype){
+    console.log(leaveprint)
+}
+
+//for
+const employee ={
+    name: "sagar",
+    age: 21
+}
+
+for( let key in employee){
+    console.log(key,employee[key])
+}
+//hoisting  var - undefined, hoisting: variable or function moves to top
+// console.log(checkhoisting)
+// var checkhoisting = "saroj nepali"
+
+//hoisting  let - error
+// console.log(checkhoisting)
+// let checkhoisting = "saroj nepali"
+
+add()
+function add(){
+    console.log(1+1)
+}
+
+
+// let - not hoisted
+// add()
+// let add=()=>
+//     console.log(1+1)
+
+// var add = function (){
+//     console.log(1+1)
+// }
